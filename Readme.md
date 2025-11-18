@@ -35,3 +35,26 @@ This generates emails.csv
 python cleaner.py
 ```
 This generates cleaned_emails.csv
+
+6. Dry Run (No emails actually sent)
+```bash
+python sender.py --csv cleaned_emails.csv --dry-run
+```
+Shows what would be sent and logs everything
+
+7. Send Real Emails
+```bash
+python sender.py --csv cleaned_emails.csv --from-email your@gmail.com --from-pass YOUR_APP_PASSWORD --subject "Optional default subject"
+```
+The script will auto-generate a personal subject, auto-generate a DM-style message body, send one email per user and log everything
+
+8. (OPTIONAL) Only send to verified emails (MX + SMTP checks)
+```bash
+python sender.py --csv cleaned_emails.csv --only-verified
+```
+
+9. If you want to limit the emails
+```bash
+python sender.py --limit 50
+```
+
