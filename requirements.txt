@@ -1,0 +1,12 @@
+# Core
+instaloader==4.13.1
+requests==2.32.3
+beautifulsoup4==4.12.3
+tldextract==5.1.2
+dnspython==2.7.0
+
+# Sending + logs
+openpyxl==3.1.5
+requests-html==0.10.0   
+instaloader[html]==4.13.1
+selenium==4.11.2

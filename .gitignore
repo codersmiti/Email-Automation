@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# Selenium / Chrome
+chrome-data/
+*.log
+
+# Cache + temp
+*.tmp
+*.swp
+
+# CSV / scraped output
+
+
+# OS files
+.DS_Store
+Thumbs.db
